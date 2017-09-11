@@ -17,3 +17,15 @@ g++ -o testProduto Produto.cpp TestProduto.cpp -lcppunit
 depois essa
 
 ./testProduto
+
+
+
+pra rodar o codigo:
+
+
+ g++ -o main Produto.cpp main.cpp 
+
+ ./main
+
+
+ 
