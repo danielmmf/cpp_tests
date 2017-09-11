@@ -17,9 +17,12 @@
     <Test id="5">
       <Name>TestCliente::testSetAndGetCpf</Name>
     </Test>
+    <Test id="6">
+      <Name>TestCliente::testProcuraNome</Name>
+    </Test>
   </SuccessfulTests>
   <Statistics>
-    <Tests>5</Tests>
+    <Tests>6</Tests>
     <FailuresTotal>0</FailuresTotal>
     <Errors>0</Errors>
     <Failures>0</Failures>
