@@ -10,14 +10,19 @@ Windows (da trabalho) : https://www.badprog.com/eclipse-cppunit-installation
 
 rodar essa linha
 
+
 g++ -o testProduto Produto.cpp TestProduto.cpp -lcppunit
+
+g++ -o testCliente Cliente.cpp TestCliente.cpp -lcppunit
 
 
 
 depois essa
 
+
 ./testProduto
 
+./testCliente
 
 
 pra rodar o codigo:
@@ -28,4 +33,3 @@ pra rodar o codigo:
  ./main
 
 
- 
