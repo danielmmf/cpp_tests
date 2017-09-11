@@ -17,10 +17,13 @@ class Produto{
 		~Produto();
 		int codigo;
 		int getCodigo();
-		void setCodigo(int cod);
+		bool getAmorzinho();
+		bool setCodigo(int cod);
 	private:
 		int cod;
 
 };
+
+//depois de assinar o metodo aqui , crie ele no arquivo cpp desse header
 
 #endif

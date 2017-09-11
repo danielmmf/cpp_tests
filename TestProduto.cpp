@@ -26,6 +26,7 @@ class TestProduto : public CppUnit::TestFixture
     CPPUNIT_TEST_SUITE(TestProduto);
     CPPUNIT_TEST(testSetCodigo);
     CPPUNIT_TEST(testGetCodigo);
+    CPPUNIT_TEST(testKimmyLinda);
     CPPUNIT_TEST_SUITE_END();
 
 public:
@@ -35,6 +36,7 @@ public:
 protected:
     void testSetCodigo(void);
     void testGetCodigo(void);
+    void testKimmyLinda(void);
 
 private:
 
@@ -44,9 +46,19 @@ private:
 //-----------------------------------------------------------------------------
 
 void
+TestProduto::testKimmyLinda(void)
+{
+    CPPUNIT_ASSERT(true == mTestObj->getAmorzinho());
+}
+
+
+
+//colocar novos testes aqui em cima !!! -> vai no Produto e cria o metodo que vc vai chamar aqui
+
+void
 TestProduto::testSetCodigo(void)
 {
-    CPPUNIT_ASSERT(2 == mTestObj->setCodigo(2));
+    CPPUNIT_ASSERT(true == mTestObj->setCodigo(2));
 }
 
 void
