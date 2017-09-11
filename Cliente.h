@@ -18,8 +18,11 @@ class Cliente{
 		int codigo;
 		int getCodigo();
 		bool setCodigo(int cod);
+		bool setNome(string nome);
+		string getNome();
 	private:
 		int cod;
+		string nome;
 		char descricao;
 
 };

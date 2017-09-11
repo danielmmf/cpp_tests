@@ -11,9 +11,12 @@
     <Test id="3">
       <Name>TestCliente::testClienteSetName</Name>
     </Test>
+    <Test id="4">
+      <Name>TestCliente::testSetNome</Name>
+    </Test>
   </SuccessfulTests>
   <Statistics>
-    <Tests>3</Tests>
+    <Tests>4</Tests>
     <FailuresTotal>0</FailuresTotal>
     <Errors>0</Errors>
     <Failures>0</Failures>

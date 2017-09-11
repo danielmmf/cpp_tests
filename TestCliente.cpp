@@ -27,6 +27,7 @@ class TestCliente : public CppUnit::TestFixture
     CPPUNIT_TEST(testSetCodigo);
     CPPUNIT_TEST(testGetCodigo);
     CPPUNIT_TEST(testClienteSetName);
+    CPPUNIT_TEST(testSetNome);
     CPPUNIT_TEST_SUITE_END();
 
 public:
@@ -36,8 +37,8 @@ public:
 protected:
     void testSetCodigo(void);
     void testGetCodigo(void);
-    void testClienteSetName(void);
-
+    void testClienteSetName(void); 
+    void testSetNome(void);
 private:
 
     Cliente *mTestObj;
@@ -65,7 +66,18 @@ TestCliente::testSetCodigo(void)
 void
 TestCliente::testGetCodigo(void)
 {
-    CPPUNIT_ASSERT(10 == mTestObj->getCodigo());
+	mTestObj->setCodigo(2);//ele sempre reinicia o objeto , precisa setar o necessario
+    CPPUNIT_ASSERT(2 == mTestObj->getCodigo());
+}
+
+
+void
+TestCliente::testSetNome(void)
+{
+	string nome = "Cliente"; 
+	string expected = "Cliente"; 
+	mTestObj->setNome(nome);//ele sempre reinicia o objeto , precisa setar o necessario
+    CPPUNIT_ASSERT(expected == mTestObj->getNome());
 }
 
 void TestCliente::setUp(void)
