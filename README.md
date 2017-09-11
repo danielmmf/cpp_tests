@@ -28,7 +28,7 @@ depois essa
 pra rodar o codigo:
 
 
- g++ -o main Produto.cpp main.cpp 
+ g++ -o main Produto.cpp Cliente.cpp main.cpp 
 
  ./main
 
