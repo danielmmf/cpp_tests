@@ -28,6 +28,8 @@ class TestCliente : public CppUnit::TestFixture
     CPPUNIT_TEST(testGetCodigo);
     CPPUNIT_TEST(testClienteSetName);
     CPPUNIT_TEST(testSetNome);
+    CPPUNIT_TEST(testSetAndGetCpf);
+    CPPUNIT_TEST(testProcuraNome);
     CPPUNIT_TEST_SUITE_END();
 
 public:
@@ -39,6 +41,9 @@ protected:
     void testGetCodigo(void);
     void testClienteSetName(void); 
     void testSetNome(void);
+    void testSetAndGetCpf(void);
+    void testProcuraNome(void);
+    
 private:
 
     Cliente *mTestObj;
@@ -79,6 +84,29 @@ TestCliente::testSetNome(void)
 	mTestObj->setNome(nome);//ele sempre reinicia o objeto , precisa setar o necessario
     CPPUNIT_ASSERT(expected == mTestObj->getNome());
 }
+
+
+void
+TestCliente::testSetAndGetCpf(void)
+{
+	string cpf = "12312312300"; 
+	mTestObj->setCpf(cpf);//ele sempre reinicia o objeto , precisa setar o necessario
+    CPPUNIT_ASSERT(cpf == mTestObj->getCpf());
+}
+
+
+void
+TestCliente::testProcuraNome(void)
+{
+	string nome = "cliente";
+	string cpf = "12312312300"; 
+	mTestObj->setNome(nome);//ele sempre reinicia o objeto , precisa setar o necessario
+	mTestObj->setCpf(cpf);//ele sempre reinicia o objeto , precisa setar o necessario
+	Cliente buscado = mTestObj->procurarNome(nome);
+    CPPUNIT_ASSERT(cpf == buscado->getCpf());
+}
+
+
 
 void TestCliente::setUp(void)
 {

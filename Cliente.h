@@ -19,10 +19,14 @@ class Cliente{
 		int getCodigo();
 		bool setCodigo(int cod);
 		bool setNome(string nome);
+		bool setCpf(string cpf);
 		string getNome();
+		string getCpf();
+		Cliente procurarNome(string nome);
 	private:
 		int cod;
 		string nome;
+		string cpf;
 		char descricao;
 
 };
