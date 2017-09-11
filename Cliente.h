@@ -3,21 +3,20 @@
 #include<string>
 #include <locale>
 	
-#ifndef PRODUTO_H__
+#ifndef CLIENTE_H__
 
-#define PRODUTO_H__
+#define CLIENTE_H__
 
 
 using namespace std;
 
-class Produto{
+class Cliente{
 
 	public:
-		Produto();
-		~Produto();
+		Cliente();
+		~Cliente();
 		int codigo;
 		int getCodigo();
-		bool getAmorzinho();
 		bool setCodigo(int cod);
 	private:
 		int cod;
